@@ -1,0 +1,36 @@
+<div class="answer-container">
+    <pre>
+    let is a new type of variable declaration in javascript.
+    
+    when a variable is declared with let it uses block-level scoping
+    
+    function outerBlock(isInput :boolean)
+    let a = 10;
+    if(isInput ){{'{'}}
+    {{'{'}}
+    //a can be accessed here
+    let b = a + 1;
+    return b;
+    {{'}'}}
+    {{'}'}}
+    //b is not accesible here
+    return b;
+    {{'}'}}
+    
+    This is a keyword that referes to an object it is belonging,basically the owner
+    In FUnction => this refers window object if "use strict" not use otherwise undefined
+    In eventBinding => this refers to an element which received an event
+    In objectmethod => this referes to owner of object method
+    
+    var person = {{'{'}}
+      name:"Mahanthesh",
+       height:"6",
+       getHeight : function(){{'{'}}
+       return this.height;//referes to person object
+       {{'}'}}
+    
+    person.getHeight();
+    {{'}'}}
+    
+</pre>
+</div>

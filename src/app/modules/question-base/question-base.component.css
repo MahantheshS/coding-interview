@@ -1,0 +1,7 @@
+.question-base-container{
+    display:flex;
+    justify-content: space-evenly;
+    background:#D3C7C7;
+    font-size:14pt;
+    padding:10px;
+}

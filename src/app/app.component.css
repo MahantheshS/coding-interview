@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    font-size:18pt;
+    justify-content: center;
+    background:#B4A6A6;
+}
+
+.top-margin{
+    margin : 1% auto;
+}

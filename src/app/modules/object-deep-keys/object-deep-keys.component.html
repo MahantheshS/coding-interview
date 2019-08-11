@@ -1,0 +1,20 @@
+<div>
+    <pre>
+    function getKeys(obj){{'{'}}
+    let json = JSON.stringify(obj);
+    let replacedFrontCurly = json.replace(/{{'{'}}/g,"");
+    let replacedBackCurly = replacedFrontCurly.replace(/{{'}'}}/g,"");
+    let splitCommas = replacedBackCurly.split(',');
+
+    //console.log(x);
+    let keys = [];
+    splitCommas.forEach(function(element){{'{'}}
+        var arr = element.split(":");
+        for(let i = 0; i < arr.length - 1; i++){{'{'}}
+            keys.push(arr[i].slice(1,-1));
+        {{'}'}}
+    {{'}'}})
+    console.log(keys);
+    }
+   </pre>
+</div>
