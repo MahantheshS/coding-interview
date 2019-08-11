@@ -1,7 +1,60 @@
 <div class="answer-container">
     <pre>
-        input : ["hello world","hello world","$$$$n    "]
-        var inputArray = [ "bonjour", "coucou"], map = {{'{}'}};
-        inputArray.join("").split("").forEach(e => map[e] = (map[e] || 0)+1);
-    </pre>
+<b>Question</b>
+Find number of occurences of each character including space
+
+<b>Input </b> 
+["hello world","hello world","$$$$nnn    "]
+
+<b>Code Snippet</b> 
+
+import{{'{'}} Component, OnInit {{'}'}} from '@angular/core';
+
+@Component({{'{'}}
+    selector: 'frequency-character',
+    templateUrl: './frequency-character.component.html',
+    styleUrls: ['./frequency-character.component.css']
+{{'}'}})
+
+export class FrequencyCharacterComponent implements OnInit{{'{'}}
+
+   inputArray : string[]= ["hello world","hello world","$$$$nnn    "];
+   outputMap ={{'{'}}};
+   ngOnInit(){{'{'}}
+    this.outputMap = this.getEachCharacterCount(this.inputArray);
+ {{'}'}}
+
+   getEachCharacterCount(inputStringArray : string[]){{'{'}}
+   if(inputStringArray && inputStringArray.length > 0){{'{'}}
+     let characterMap ={{'{'}}};
+     inputStringArray.join("").split("").forEach(
+      element =>{{'{'}}
+          if(characterMap[element]){{'{'}}
+            characterMap[element]++;
+        {{'}'}}
+          else{{'{'}}
+            characterMap[element] = 1;
+        {{'}'}}
+    {{'}'}}
+     );
+     console.log(characterMap);
+     return characterMap;
+     {{'}'}}
+ {{'}'}}
+{{'}'}}
+
+<b>Output : </b>
+{{'{'}}
+    " ": 6
+    $: 4
+    d: 2
+    e: 2
+    h: 2
+    l: 6
+    n: 3
+    o: 4
+    r: 2
+    w: 2
+{{'}'}}
+</pre>
 </div>

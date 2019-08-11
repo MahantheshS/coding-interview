@@ -1,5 +1,6 @@
-
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { QuestionsRoute } from './questions-routing.module';
 
 import { QuestionBaseComponent } from './question-base/question-base.component';
@@ -19,6 +20,8 @@ import { DuplicateStringComponent } from './duplicate-string/duplicate-string.co
     DuplicateStringComponent
   ],
   imports: [
+    CommonModule,
+    RouterModule,
     QuestionsRoute
   ]
 })

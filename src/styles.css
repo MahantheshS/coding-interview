@@ -4,12 +4,15 @@
 .answer-container{
     display : flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     overflow-y: auto;
     max-height:550px;
+    
 }
 
 pre{
-    
-    word-break: break-word;
+    font-size:13pt;
+}
+a.change-color{
+    color : 005f87 !important;
 }
