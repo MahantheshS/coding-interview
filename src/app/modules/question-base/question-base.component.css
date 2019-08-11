@@ -1,11 +1,20 @@
 .question-base-container{
     display:flex;
     justify-content: space-evenly;
-    background:#D3C7C7;
+    background:#c1e8d7;
     font-size:14pt;
     padding:10px;
 }
 a {
-    color: #005f87;
+    color: black;
+  }
+  a.active{
+      
+      font-weight:bold;
   }
   
+  @media screen and (max-width:500px){
+    .question-base-container{
+        font-size:10pt;
+    }
+  }

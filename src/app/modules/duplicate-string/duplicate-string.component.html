@@ -18,9 +18,9 @@ styleUrls : ['./duplicate-string.component.css']
 export class DuplicateStringComponent implements OnInit{{'{'}}
     inputArray = ["Accenture","Coding Round","Accenture","Interview","Interview"]
     ngOnInit(){{'{'}}
-    this.removedDuplicates = this.removeDuplicates(this.inputArray);
+       this.removedDuplicates = this.removeDuplicates(this.inputArray);
     {{'}'}}
- removeDuplicates(duplicateArray){{'{'}}
+    removeDuplicates(duplicateArray){{'{'}}
     if(duplicateArray && duplicateArray.length > 0){{'{'}}
       var  removedDuplicateArray = [];
       removedDuplicateArray = duplicateArray.filter(
@@ -28,7 +28,7 @@ export class DuplicateStringComponent implements OnInit{{'{'}}
       console.log(removedDuplicateArray);
      return removedDuplicateArray;
    {{'}'}}
-  {{'}'}}
+ {{'}'}}
 {{'}'}}
 
 <b>Output :</b>

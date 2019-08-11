@@ -5,7 +5,7 @@
     When to use each with examples.
     
     <b>let</b> is a new type of variable declaration in javascript.
-    when a variable is declared with let it uses block-level scoping
+    when a variable is declared with let it uses block-level scoping.
     
     <b>This</b> is a keyword that referes to an object it is belonging to.
     In Function => this refers window object(with "use strict").
@@ -36,6 +36,27 @@
           this.personName = this.person.name;//'This' referes person Object here
         {{'}'}}
     {{'}'}}
+
+    When a fuction is invoked with "new" keyword the function 
+    is known as constructor function and returns a new instance.
+    In this case value of "this" refers to newly created instance.
+
+    function Person(fn,ln){{'{'}}
+    this.first_name = fn;
+    this.last_name = ln;
+  
+    this.displayName = function() {{'{'}}
+      console.log(`Name: ${{'{'}}this.first_name{{'}'}} ${{'{'}}this.last_name{{'}'}}`);
+      {{'}'}}
+    {{'}'}}
+    
+    //this becomes person1
+    let person1 = new Person("Mahanthesh", "Shivamoggeppa");
+    person.displayName();
+    
+    //this becomes person2
+    let person2 = new Person("Mahanth", "esh");
+    person.displayName();
     
 </pre>
 </div>

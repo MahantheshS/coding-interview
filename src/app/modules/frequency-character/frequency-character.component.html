@@ -30,17 +30,19 @@ export class FrequencyCharacterComponent implements OnInit{{'{'}}
      inputStringArray.join("").split("").forEach(
       element =>{{'{'}}
           if(characterMap[element]){{'{'}}
+           //If same character exists increase count of it
             characterMap[element]++;
         {{'}'}}
           else{{'{'}}
+            //If first time initialise it to 1
             characterMap[element] = 1;
         {{'}'}}
-    {{'}'}}
-     );
+    {{'}'}});
+    
      console.log(characterMap);
      return characterMap;
-     {{'}'}}
- {{'}'}}
+    {{'}'}}
+  {{'}'}}
 {{'}'}}
 
 <b>Output : </b>

@@ -21,7 +21,8 @@ export class LetThisComponent implements OnInit{
       }
      // console.log(b); can't acess b here
     }
-
+    
+    //
     letThisDemo(){
      // this.a  // can't access a here
      this.personName = this.person.name;//'This' referes person Object here

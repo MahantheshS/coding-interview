@@ -19,9 +19,9 @@ export class ObjectDeepKeysComponent implements OnInit{
         if(obj ){
         let keys = [];
         let jsonString: string = JSON.stringify(obj);
-        let replacedFrontCurly = jsonString.replace(/{/g, "");
-        let replacedBackCurly = replacedFrontCurly.replace(/}/g, "");
-        let splitCommas = replacedBackCurly.split(',');
+        let replacedFrontCurly :string = jsonString.replace(/{/g, "");
+        let replacedBackCurly :string = replacedFrontCurly.replace(/}/g, "");
+        let splitCommas : string[] = replacedBackCurly.split(',');
 
         splitCommas.forEach(function (element) {
             //split element with colon to get key
