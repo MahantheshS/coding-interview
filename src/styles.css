@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     overflow-y: auto;
-    max-height:550px;
 }
 
 pre{
